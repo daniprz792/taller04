@@ -1,12 +1,13 @@
 /* PALETA DE COLORES */
 :root {
-  --tinta: #1b2430;
-  --papel: #faf8f4;
-  --acento: #0097A7;
-  --acentoOscuro: #006f7c;
-  --linea: #e4dfd6;
-  --blanco: #fff;
-  --gris: #5b6672;
+  --negro: #1c1a17; /*negro*/
+  --beige: #f3ece0; /*beige*/
+  --verde: #5f6e32;  /*verde*/
+  --VerdeOscuro: #46531f;  /*verde oscuro*/
+  --cafe: #4e3521; 
+  --linea: #ddd2c0; 
+  --blanco: #fbf8f2;
+  --gris: #6b5f52;
 }
 
 /* estilos generales */
@@ -21,8 +22,8 @@ html {
 }
 
 body {
-  background: var(--papel);
-  color: var(--tinta);
+  background: var(--beige);
+  color: var(--negro);
   font-family: 'Segoe UI', Roboto, Arial, sans-serif;
   font-size: 17px;
   line-height: 1.6;
@@ -44,11 +45,11 @@ h1, h2, h3 {
 
 mark {
   padding: 0 6px;
-  background: #ffe9a8;
-  border-radius: 3px;
+  background: #dfe3b8;
+  border-radius: 2rem;
 }
 
-/* ENCABEZADO */
+/* encabezado */
 .encabezado {
   position: sticky;
   top: 0;
@@ -74,10 +75,10 @@ mark {
 }
 
 .logo span {
-  color: var(--acento);
+  color: var(--verde);
 }
 
-/* menu de navegacion */
+/* menu de nav */
 .menu {
   display: flex;
   gap: 24px;
@@ -91,11 +92,11 @@ mark {
 
 .menu a:hover,
 .menu a.activo {
-  color: var(--acento);
-  border-bottom-color: var(--acento);
+  color: var(--verde);
+  border-bottom-color: var(--verde);
 }
 
-/* SECCIÓN INICIO */
+/*seccion inicio*/
 .inicio {
   display: grid;
   grid-template-columns: 280px 1fr;
@@ -112,7 +113,7 @@ mark {
   overflow: hidden;
   border: 6px solid var(--blanco);
   border-radius: 50%;
-  box-shadow: 0 10px 30px rgb(27 36 48 / 18%);
+  box-shadow: 0 10px 30px rgb(28 26 23 / 18%);
 }
 
 .foto img {
@@ -124,7 +125,7 @@ mark {
 .etiqueta {
   display: inline-block;
   margin-bottom: 10px;
-  color: var(--acentoOscuro);
+  color: var(--cafe);
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -137,7 +138,7 @@ mark {
 }
 
 .inicio-texto h1 em {
-  color: var(--acento);
+  color: var(--verde);
   font-style: normal;
 }
 
@@ -158,8 +159,8 @@ mark {
 .boton {
   display: inline-block;
   padding: 12px 28px;
-  background: var(--acento);
-  border: 2px solid var(--acento);
+  background: var(--verde);
+  border: 2px solid var(--verde);
   border-radius: 8px;
   color: var(--blanco);
   font-weight: 700;
@@ -167,26 +168,25 @@ mark {
 }
 
 .boton:hover {
-  background: var(--acentoOscuro);
-  border-color: var(--acentoOscuro);
+  background: var(--VerdeOscuro);
+  border-color: var(--VerdeOscuro);
 }
 
 .boton-claro {
   background: transparent;
-  color: var(--acento);
+  color: var(--verde);
 }
 
 .boton-claro:hover {
-  background: var(--acento);
+  background: var(--verde);
   color: var(--blanco);
 }
 
-/* SECCIONES */
+/*secciones*/
 .seccion {
   max-width: 1000px;
   margin: 0 auto;
   padding: 48px 24px;
-  border-top: 1px solid var(--linea);
 }
 
 .seccion h2 {
@@ -212,7 +212,6 @@ mark {
   align-content: start;
   padding: 24px;
   background: var(--blanco);
-  border-left: 4px solid var(--acento);
   border-radius: 8px;
 }
 
@@ -224,7 +223,7 @@ mark {
   color: var(--gris);
 }
 
-/* habilidades */
+/*skills*/
 .habilidades {
   display: flex;
   flex-wrap: wrap;
@@ -241,8 +240,8 @@ mark {
 }
 
 .habilidades li:hover {
-  background: var(--acento);
-  border-color: var(--acento);
+  background: var(--cafe);
+  border-color: var(--verde);
   color: var(--blanco);
 }
 
@@ -273,15 +272,15 @@ td {
 }
 
 th {
-  background: var(--tinta);
+  background: var(--negro);
   color: var(--blanco);
 }
 
 tbody tr:hover {
-  background: #eef8f9;
+  background: #ece4d2;
 }
 
-/* PROYECTOS */
+/*proyectos*/
 .proyectos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -294,9 +293,9 @@ tbody tr:hover {
   gap: 8px;
   padding: 24px;
   background: var(--blanco);
-  border-top: 4px solid var(--acento);
+  border-top: 4px solid var(--cafe);
   border-radius: 8px;
-  box-shadow: 0 4px 14px rgb(27 36 48 / 8%);
+  box-shadow: 0 4px 14px rgb(28 26 23 / 10%);
   transition: transform 0.2s ease;
 }
 
@@ -310,19 +309,19 @@ tbody tr:hover {
 
 .enlace {
   margin-top: auto;
-  color: var(--acento);
+  color: var(--verde);
   font-weight: 700;
 }
 
-/* PIE DE PÁGINA */
+/*footer*/
 .pie {
   padding: 28px 24px;
-  background: var(--tinta);
+  background: var(--negro);
   color: var(--blanco);
   text-align: center;
 }
 
-/* pantallas pequeñas */
+/*mq*/
 @media (max-width: 760px) {
   .inicio {
     grid-template-columns: 1fr;
