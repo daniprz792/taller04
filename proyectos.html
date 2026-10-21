@@ -13,10 +13,10 @@
   <!-- header -->
   <header class="encabezado">
     <div class="encabezado-contenido">
-      <a class="logo" href="img/">Daniel<span>Lopez</span></a>
+      <a class="logo" href="index.html">Daniel<span>Lopez</span></a>
       <nav class="menu">
         <a href="index.html">Inicio</a>
-        <a href="formacion.html">Formación</a>
+        <a href="formacion.html">Formacion</a>
         <a class="activo" href="proyectos.html">Proyectos</a>
         <a href="index.html#contacto">Contacto</a>
       </nav>
@@ -28,23 +28,35 @@
     <section class="seccion">
       <h2>Mis proyectos</h2>
       <div class="proyectos">
-        <article class="proyecto">
-          <span class="etiqueta">HTML - CSS - JavaScript</span>
-          <h3>Pagina del programa de Ingeniería de Software</h3>
-          <p>Réplica de la página oficial de UCompensar con encabezado fijo, tarjetas de precio interactivas y un acordeón de pasos.</p>
-          <a class="enlace" href="#">Ver proyecto →</a>
-        </article>
-        <article class="proyecto">
-          <span class="etiqueta">HTML - CSS</span>
-          <h3>MeccaInventario</h3>
-          <p></p>
-        </article>
 
         <article class="proyecto">
           <span class="etiqueta">HTML - CSS - JS - Java - MySQL</span>
           <h3>MeccaInventario</h3>
           <p>Inventario de activos para la empresa Mecca</p>
           <p>Se utilizaron herramientas como Java, Javalin, Maven, Mysql, HTML, CSS, JS</p>
+          <button class="boton boton-galeria" type="button" aria-expanded="false" aria-controls="galeria-meccainventario">
+            Ver imágenes del proyecto
+          </button>
+          <div class="galeria" id="galeria-meccainventario" hidden>
+            <a href="img/login.PNG" target="_blank" rel="noopener noreferrer">
+              <img src="img/login.PNG" alt="Pantalla de inicio de sesión de MeccaInventario">
+            </a>
+            <a href="img/menu.PNG" target="_blank" rel="noopener noreferrer">
+              <img src="img/menu.PNG" alt="Menú principal de MeccaInventario">
+            </a>
+            <a href="img/inventario.PNG" target="_blank" rel="noopener noreferrer">
+              <img src="img/inventario.PNG" alt="Listado de inventario de MeccaInventario">
+            </a>
+            <a href="img/agregar.PNG" target="_blank" rel="noopener noreferrer">
+              <img src="img/agregar.PNG" alt="Formulario para agregar activos a MeccaInventario">
+            </a>
+            <a href="img/conteo.PNG" target="_blank" rel="noopener noreferrer">
+              <img src="img/conteo.PNG" alt="Pantalla de conteo de activos de MeccaInventario">
+            </a>
+            <a href="img/historial.PNG" target="_blank" rel="noopener noreferrer">
+              <img src="img/historial.PNG" alt="Historial de movimientos de MeccaInventario">
+            </a>
+          </div>
         </article>
       </div>
     </section>
@@ -54,5 +66,6 @@
   <footer class="pie">
     <p> 2026 Daniel Lopez</p>
   </footer>
+  <script src="js/proyectos.js" defer></script>
 </body>
 </html>
